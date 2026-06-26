@@ -2,3 +2,4 @@ node_modules/
 .tripwire/
 .agentcert/
 server.log
+server.err.log
