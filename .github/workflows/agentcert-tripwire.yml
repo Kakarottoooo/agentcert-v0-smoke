@@ -1,0 +1,36 @@
+name: AgentCert v0 smoke
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  tripwire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Start local demo server
+        run: |
+          node demo-server.mjs > server.log 2>&1 &
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:3020/health; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat server.log
+          exit 1
+
+      - uses: Kakarottoooo/agentcert/actions/tripwire@v0
+        with:
+          config: tripwire.yml
+          out: .tripwire/latest
+          fail-under: "0"
+          subject: agentcert-v0-smoke
+          agentcert-out: .agentcert/latest
+          fail-on-verdict: "false"
