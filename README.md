@@ -1,5 +1,12 @@
 # AgentCert v0 Smoke Repo
 
+[![AgentCert](https://kakarottoooo.github.io/agentcert-v0-smoke/agentcert/latest/badge.svg)](https://kakarottoooo.github.io/agentcert-v0-smoke/agentcert/latest/agentcert-report.html)
+
+The badge above is generated and published by the AgentCert Tripwire action on
+every run (`publish-pages: "true"`). It links to the hosted evidence report;
+the full Tripwire report with screenshots and traces is published next to it
+[here](https://kakarottoooo.github.io/agentcert-v0-smoke/agentcert/tripwire/tripwire-report.html).
+
 This repository verifies that an external project can run:
 
 ```yaml
