@@ -7,6 +7,8 @@ on:
 jobs:
   tripwire:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -34,3 +36,4 @@ jobs:
           subject: agentcert-v0-smoke
           agentcert-out: .agentcert/latest
           fail-on-verdict: "false"
+          publish-pages: "true"
