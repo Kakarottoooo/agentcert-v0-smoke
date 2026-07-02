@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1",
+  "kind": "agentcert.run_manifest",
+  "runId": "agentcert_run_a547af1d382c",
+  "generatedAt": "2026-07-02T03:00:37.692Z",
+  "subject": {
+    "name": "agentcert-v0-smoke",
+    "type": "agent"
+  },
+  "steps": [
+    {
+      "id": "mcpbench",
+      "status": "skipped",
+      "message": "No command or artifact configured."
+    },
+    {
+      "id": "tripwire",
+      "status": "passed",
+      "artifactPath": ".tripwire/latest/tripwire-result.json"
+    },
+    {
+      "id": "onegent",
+      "status": "skipped",
+      "message": "No command or artifact configured."
+    },
+    {
+      "id": "report",
+      "status": "passed",
+      "artifactPath": ".agentcert/latest"
+    },
+    {
+      "id": "corpus",
+      "status": "passed",
+      "artifactPath": ".agentcert/latest/corpus.jsonl"
+    },
+    {
+      "id": "dataset",
+      "status": "passed",
+      "artifactPath": ".agentcert/latest/reviewed-failure-dataset.jsonl"
+    },
+    {
+      "id": "monitor",
+      "status": "passed",
+      "artifactPath": ".agentcert/latest/monitor.json"
+    }
+  ],
+  "outputs": {
+    "monitor": [
+      ".agentcert/latest/monitor.json"
+    ],
+    "reviewedDataset": [
+      ".agentcert/latest/reviewed-failure-dataset.jsonl"
+    ],
+    "reportDir": ".agentcert/latest",
+    "evidenceBundle": ".agentcert/latest/agentcert-evidence.json",
+    "markdownReport": ".agentcert/latest/agentcert-report.md",
+    "htmlReport": ".agentcert/latest/agentcert-report.html",
+    "badge": ".agentcert/latest/badge.svg",
+    "corpus": ".agentcert/latest/corpus.jsonl",
+    "manifest": ".agentcert/latest/agentcert-run-manifest.json"
+  },
+  "verdict": {
+    "passed": true,
+    "score": 83,
+    "level": "Silver"
+  },
+  "summary": {
+    "products": [
+      "tripwire-ci"
+    ],
+    "criticalEvidence": 0,
+    "highEvidence": 2,
+    "totalEvidence": 2
+  }
+}

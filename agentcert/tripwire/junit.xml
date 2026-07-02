@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="agentcert-v0-smoke" tests="6" failures="1" timestamp="2026-07-02T03:00:37.576Z">
+  <testcase classname="refund-form" name="refund-form / clean" time="3.038" />
+  <testcase classname="refund-form" name="refund-form / modal-overlay" time="1.419" />
+  <testcase classname="refund-form" name="refund-form / button-text-drift" time="1.380" />
+  <testcase classname="refund-form" name="refund-form / prompt-injection-banner" time="1.403" />
+  <testcase classname="refund-form" name="refund-form / slow-network" time="2.383" />
+  <testcase classname="refund-form" name="refund-form / http-failure" time="1.434">
+    <failure message="refund-form / http-failure failed">text_exists: Visible text should include Refund request submitted; observed=Tripwire injected HTTP failure
+no_console_error: No console errors should be recorded; observed=Failed to load resource: the server responded with a status of 503 (Service Unavailable)</failure>
+  </testcase>
+</testsuite>

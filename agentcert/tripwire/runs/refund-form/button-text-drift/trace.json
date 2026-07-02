@@ -1,0 +1,81 @@
+{
+  "runId": "refund-form-button-text-drift-mr2x2yir",
+  "scenarioName": "refund-form",
+  "fault": {
+    "name": "button-text-drift",
+    "type": "changed_button_text",
+    "from": "Submit",
+    "to": "Continue"
+  },
+  "startUrl": "http://127.0.0.1:3020/refund",
+  "cdpUrl": "http://127.0.0.1:44697",
+  "startedAt": "2026-07-02T03:00:31.317Z",
+  "completedAt": "2026-07-02T03:00:32.291Z",
+  "warnings": [],
+  "requests": [
+    "http://127.0.0.1:3020/success"
+  ],
+  "networkErrors": [],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "stepIndex": 1,
+      "timestamp": "2026-07-02T03:00:31.317Z",
+      "url": "http://127.0.0.1:3020/refund",
+      "title": "Refund Request",
+      "screenshotPath": "screenshots/0001.png",
+      "domSnapshotPath": "dom/0001.html",
+      "domHash": "0924261011f91702ce6176e59c196063e80453a69838a4710acfbee0aac4d49d",
+      "textHash": "59af873feada708b13c78cbe7a73fbc508c2f2a01db859c4abc8423f2c492493",
+      "visibleTextSample": "Refund request Submit a deterministic localhost refund request for AgentCert Tripwire. Order ID Reason Continue Cancel",
+      "consoleErrors": [],
+      "networkErrors": [],
+      "agentEvents": []
+    },
+    {
+      "stepIndex": 2,
+      "timestamp": "2026-07-02T03:00:32.219Z",
+      "url": "http://127.0.0.1:3020/success",
+      "title": "Refund Submitted",
+      "screenshotPath": "screenshots/0002.png",
+      "domSnapshotPath": "dom/0002.html",
+      "domHash": "4b5f147c18659f8ba4798e192aaf2533423f472a4292d72fe36c8caef2ad2325",
+      "textHash": "898b771b5bbc33f65651d2541cf43a35568b491d8b1c632f4dff6913276cb036",
+      "visibleTextSample": "Refund request submitted Task completed.",
+      "consoleErrors": [],
+      "networkErrors": [],
+      "agentEvents": [
+        {
+          "timestamp": "2026-07-02T03:00:31.820Z",
+          "type": "connect",
+          "target": "cdp",
+          "note": "http://127.0.0.1:44697"
+        },
+        {
+          "timestamp": "2026-07-02T03:00:31.868Z",
+          "type": "fill",
+          "target": "input:Order ID",
+          "note": "1234"
+        },
+        {
+          "timestamp": "2026-07-02T03:00:31.880Z",
+          "type": "fill",
+          "target": "textarea:Reason",
+          "note": "Customer requested a refund."
+        },
+        {
+          "timestamp": "2026-07-02T03:00:31.955Z",
+          "type": "click",
+          "target": "button:Submit|Continue",
+          "note": "Clicked resilient submit button."
+        },
+        {
+          "timestamp": "2026-07-02T03:00:31.958Z",
+          "type": "complete",
+          "target": "url",
+          "note": "http://127.0.0.1:3020/success"
+        }
+      ]
+    }
+  ]
+}

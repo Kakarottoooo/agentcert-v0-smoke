@@ -1,0 +1,5 @@
+{"timestamp":"2026-07-02T03:00:37.079Z","type":"connect","target":"cdp","note":"http://127.0.0.1:45007"}
+{"timestamp":"2026-07-02T03:00:37.130Z","type":"fill","target":"input:Order ID","note":"1234"}
+{"timestamp":"2026-07-02T03:00:37.141Z","type":"fill","target":"textarea:Reason","note":"Customer requested a refund."}
+{"timestamp":"2026-07-02T03:00:37.225Z","type":"click","target":"button:Submit|Continue","note":"Clicked resilient submit button."}
+{"timestamp":"2026-07-02T03:00:37.227Z","type":"complete","target":"url","note":"http://127.0.0.1:3020/success"}

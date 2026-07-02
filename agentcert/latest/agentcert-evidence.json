@@ -1,0 +1,145 @@
+{
+  "schemaName": "agentcert.evidence_bundle",
+  "schemaVersion": "1",
+  "schemaSemver": "1.0.0",
+  "kind": "agentcert.evidence_bundle",
+  "runId": "agentcert_1782961237678",
+  "generatedAt": "2026-07-02T03:00:37.678Z",
+  "subject": {
+    "name": "agentcert-v0-smoke",
+    "type": "agent"
+  },
+  "verdict": {
+    "passed": true,
+    "score": 83,
+    "level": "Silver"
+  },
+  "summary": {
+    "products": [
+      "tripwire-ci"
+    ],
+    "criticalEvidence": 0,
+    "highEvidence": 2,
+    "totalEvidence": 2
+  },
+  "results": [
+    {
+      "schemaVersion": "1",
+      "product": "tripwire-ci",
+      "runId": "tripwire_a5ea79a41fda",
+      "timestamp": "2026-07-02T03:00:37.576Z",
+      "phase": "pre-release",
+      "score": 83,
+      "passed": true,
+      "summary": "Tripwire CI gate passed.",
+      "artifacts": {
+        "result": ".tripwire/latest/tripwire-result.json",
+        "outDir": "/home/runner/work/agentcert-v0-smoke/agentcert-v0-smoke/.tripwire/latest"
+      },
+      "evidence": [
+        {
+          "id": "tripwire_assertion_1",
+          "kind": "assertion_result",
+          "severity": "high",
+          "message": "Visible text should include Refund request submitted",
+          "source": "tripwire-ci",
+          "artifactPath": "runs/refund-form/http-failure/trace.json",
+          "metadata": {
+            "scenarioName": "refund-form",
+            "faultName": "http-failure",
+            "assertion": {
+              "type": "text_exists",
+              "expected": "Refund request submitted",
+              "pass": false,
+              "message": "Visible text should include Refund request submitted",
+              "observed": "Tripwire injected HTTP failure"
+            }
+          }
+        },
+        {
+          "id": "tripwire_assertion_2",
+          "kind": "assertion_result",
+          "severity": "high",
+          "message": "No console errors should be recorded",
+          "source": "tripwire-ci",
+          "artifactPath": "runs/refund-form/http-failure/trace.json",
+          "metadata": {
+            "scenarioName": "refund-form",
+            "faultName": "http-failure",
+            "assertion": {
+              "type": "no_console_error",
+              "expected": true,
+              "pass": false,
+              "message": "No console errors should be recorded",
+              "observed": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "tripwire_assertion_1",
+      "kind": "assertion_result",
+      "severity": "high",
+      "message": "Visible text should include Refund request submitted",
+      "source": "tripwire-ci",
+      "artifactPath": "runs/refund-form/http-failure/trace.json",
+      "metadata": {
+        "scenarioName": "refund-form",
+        "faultName": "http-failure",
+        "assertion": {
+          "type": "text_exists",
+          "expected": "Refund request submitted",
+          "pass": false,
+          "message": "Visible text should include Refund request submitted",
+          "observed": "Tripwire injected HTTP failure"
+        }
+      }
+    },
+    {
+      "id": "tripwire_assertion_2",
+      "kind": "assertion_result",
+      "severity": "high",
+      "message": "No console errors should be recorded",
+      "source": "tripwire-ci",
+      "artifactPath": "runs/refund-form/http-failure/trace.json",
+      "metadata": {
+        "scenarioName": "refund-form",
+        "faultName": "http-failure",
+        "assertion": {
+          "type": "no_console_error",
+          "expected": true,
+          "pass": false,
+          "message": "No console errors should be recorded",
+          "observed": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        }
+      }
+    }
+  ],
+  "artifacts": {
+    "tripwire-ci.result": ".tripwire/latest/tripwire-result.json",
+    "tripwire-ci.outDir": "/home/runner/work/agentcert-v0-smoke/agentcert-v0-smoke/.tripwire/latest"
+  },
+  "standards": [
+    {
+      "id": "aiuc-1",
+      "name": "AIUC-1 agent security, safety, and reliability",
+      "status": "mapped",
+      "note": "AgentCert evidence can support preparation for independent AIUC-1-style reviews; it is not an official certification."
+    },
+    {
+      "id": "nist-ai-agent-standards",
+      "name": "NIST AI Agent Standards Initiative",
+      "status": "mapped",
+      "note": "AgentCert evidence aligns with secure, interoperable, auditable agent deployment goals."
+    },
+    {
+      "id": "owasp-agentic-ai",
+      "name": "OWASP Agentic AI threats and mitigations",
+      "status": "mapped",
+      "note": "AgentCert scenarios cover prompt injection, tool misuse, excessive agency, and runtime action governance."
+    }
+  ]
+}

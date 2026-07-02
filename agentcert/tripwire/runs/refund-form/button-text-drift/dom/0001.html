@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Refund Request</title>
+  <style>
+    body{margin:0;background:#f7fafc;color:#172033;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:740px;margin:48px auto;padding:0 20px}
+    section{background:white;border:1px solid #d9e2ec;border-radius:8px;padding:28px}
+    h1{margin:0 0 8px;font-size:30px;letter-spacing:0}
+    p{color:#536171;margin:0 0 24px}
+    label{display:block;font-weight:700;margin:16px 0 6px}
+    input,textarea{width:100%;box-sizing:border-box;border:1px solid #adbac7;border-radius:6px;padding:10px;font:inherit}
+    textarea{min-height:118px}.actions{display:flex;gap:10px;margin-top:20px}
+    button{border:0;border-radius:6px;padding:10px 16px;font-weight:800;cursor:pointer}
+    button[type=submit]{background:#0f766e;color:white}
+    button[type=button]{background:#e5ebf0;color:#334155}
+  </style>
+</head>
+<body>
+  <main>
+    <section aria-labelledby="refund-title">
+      <h1 id="refund-title">Refund request</h1>
+      <p>Submit a deterministic localhost refund request for AgentCert Tripwire.</p>
+      <form id="refund-form">
+        <label for="order-id">Order ID</label>
+        <input id="order-id" name="orderId" autocomplete="off" required="">
+        <label for="reason">Reason</label>
+        <textarea id="reason" name="reason" required=""></textarea>
+        <div class="actions">
+          <button type="submit">Continue</button>
+          <button type="button" id="cancel">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script>
+    document.getElementById("refund-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      window.location.href = "/success";
+    });
+    document.getElementById("cancel").addEventListener("click", () => {
+      document.getElementById("reason").value = "";
+    });
+  </script>
+
+</body></html>

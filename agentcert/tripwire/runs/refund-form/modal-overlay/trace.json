@@ -1,0 +1,86 @@
+{
+  "runId": "refund-form-modal-overlay-mr2x2xex",
+  "scenarioName": "refund-form",
+  "fault": {
+    "name": "modal-overlay",
+    "type": "modal_overlay",
+    "delayMs": 200
+  },
+  "startUrl": "http://127.0.0.1:3020/refund",
+  "cdpUrl": "http://127.0.0.1:36011",
+  "startedAt": "2026-07-02T03:00:29.879Z",
+  "completedAt": "2026-07-02T03:00:30.895Z",
+  "warnings": [],
+  "requests": [
+    "http://127.0.0.1:3020/success"
+  ],
+  "networkErrors": [],
+  "consoleErrors": [],
+  "steps": [
+    {
+      "stepIndex": 1,
+      "timestamp": "2026-07-02T03:00:29.879Z",
+      "url": "http://127.0.0.1:3020/refund",
+      "title": "Refund Request",
+      "screenshotPath": "screenshots/0001.png",
+      "domSnapshotPath": "dom/0001.html",
+      "domHash": "c1619c15a7332fc7c6985f435b39ac3cbd8dd132688233a620e8be91d9a02c1d",
+      "textHash": "2371ec3443a499570b76885a20f99d36492371ab5350d5441cf6923299c211a8",
+      "visibleTextSample": "Refund request Submit a deterministic localhost refund request for AgentCert Tripwire. Order ID Reason Submit Cancel",
+      "consoleErrors": [],
+      "networkErrors": [],
+      "agentEvents": []
+    },
+    {
+      "stepIndex": 2,
+      "timestamp": "2026-07-02T03:00:30.817Z",
+      "url": "http://127.0.0.1:3020/success",
+      "title": "Refund Submitted",
+      "screenshotPath": "screenshots/0002.png",
+      "domSnapshotPath": "dom/0002.html",
+      "domHash": "b98fdb4b320b7bce91e96c7a5021e13f61d0fcd161678a2fd44626ef5e11bb4f",
+      "textHash": "ef312b9ec242624f8360d816cc50390e734d7b6a1f925994d7ddd1bd367cf572",
+      "visibleTextSample": "Refund request submitted Task completed. Session notice Please close this notice to continue. Close",
+      "consoleErrors": [],
+      "networkErrors": [],
+      "agentEvents": [
+        {
+          "timestamp": "2026-07-02T03:00:30.399Z",
+          "type": "connect",
+          "target": "cdp",
+          "note": "http://127.0.0.1:36011"
+        },
+        {
+          "timestamp": "2026-07-02T03:00:30.465Z",
+          "type": "click",
+          "target": "tripwire-modal-close",
+          "note": "Closed injected modal overlay."
+        },
+        {
+          "timestamp": "2026-07-02T03:00:30.478Z",
+          "type": "fill",
+          "target": "input:Order ID",
+          "note": "1234"
+        },
+        {
+          "timestamp": "2026-07-02T03:00:30.485Z",
+          "type": "fill",
+          "target": "textarea:Reason",
+          "note": "Customer requested a refund."
+        },
+        {
+          "timestamp": "2026-07-02T03:00:30.555Z",
+          "type": "click",
+          "target": "button:Submit|Continue",
+          "note": "Clicked resilient submit button."
+        },
+        {
+          "timestamp": "2026-07-02T03:00:30.558Z",
+          "type": "complete",
+          "target": "url",
+          "note": "http://127.0.0.1:3020/success"
+        }
+      ]
+    }
+  ]
+}
