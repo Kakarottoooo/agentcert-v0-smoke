@@ -1,5 +1,5 @@
 {
-  "runId": "refund-form-modal-overlay-mr2x2xex",
+  "runId": "refund-form-modal-overlay-mr2x6bwj",
   "scenarioName": "refund-form",
   "fault": {
     "name": "modal-overlay",
@@ -7,9 +7,9 @@
     "delayMs": 200
   },
   "startUrl": "http://127.0.0.1:3020/refund",
-  "cdpUrl": "http://127.0.0.1:36011",
-  "startedAt": "2026-07-02T03:00:29.879Z",
-  "completedAt": "2026-07-02T03:00:30.895Z",
+  "cdpUrl": "http://127.0.0.1:35419",
+  "startedAt": "2026-07-02T03:03:08.556Z",
+  "completedAt": "2026-07-02T03:03:09.533Z",
   "warnings": [],
   "requests": [
     "http://127.0.0.1:3020/success"
@@ -19,7 +19,7 @@
   "steps": [
     {
       "stepIndex": 1,
-      "timestamp": "2026-07-02T03:00:29.879Z",
+      "timestamp": "2026-07-02T03:03:08.556Z",
       "url": "http://127.0.0.1:3020/refund",
       "title": "Refund Request",
       "screenshotPath": "screenshots/0001.png",
@@ -33,7 +33,7 @@
     },
     {
       "stepIndex": 2,
-      "timestamp": "2026-07-02T03:00:30.817Z",
+      "timestamp": "2026-07-02T03:03:09.457Z",
       "url": "http://127.0.0.1:3020/success",
       "title": "Refund Submitted",
       "screenshotPath": "screenshots/0002.png",
@@ -45,37 +45,37 @@
       "networkErrors": [],
       "agentEvents": [
         {
-          "timestamp": "2026-07-02T03:00:30.399Z",
+          "timestamp": "2026-07-02T03:03:09.021Z",
           "type": "connect",
           "target": "cdp",
-          "note": "http://127.0.0.1:36011"
+          "note": "http://127.0.0.1:35419"
         },
         {
-          "timestamp": "2026-07-02T03:00:30.465Z",
+          "timestamp": "2026-07-02T03:03:09.101Z",
           "type": "click",
           "target": "tripwire-modal-close",
           "note": "Closed injected modal overlay."
         },
         {
-          "timestamp": "2026-07-02T03:00:30.478Z",
+          "timestamp": "2026-07-02T03:03:09.112Z",
           "type": "fill",
           "target": "input:Order ID",
           "note": "1234"
         },
         {
-          "timestamp": "2026-07-02T03:00:30.485Z",
+          "timestamp": "2026-07-02T03:03:09.119Z",
           "type": "fill",
           "target": "textarea:Reason",
           "note": "Customer requested a refund."
         },
         {
-          "timestamp": "2026-07-02T03:00:30.555Z",
+          "timestamp": "2026-07-02T03:03:09.186Z",
           "type": "click",
           "target": "button:Submit|Continue",
           "note": "Clicked resilient submit button."
         },
         {
-          "timestamp": "2026-07-02T03:00:30.558Z",
+          "timestamp": "2026-07-02T03:03:09.191Z",
           "type": "complete",
           "target": "url",
           "note": "http://127.0.0.1:3020/success"

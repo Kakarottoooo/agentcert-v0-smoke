@@ -1,6 +1,6 @@
-{"timestamp":"2026-07-02T03:00:30.399Z","type":"connect","target":"cdp","note":"http://127.0.0.1:36011"}
-{"timestamp":"2026-07-02T03:00:30.465Z","type":"click","target":"tripwire-modal-close","note":"Closed injected modal overlay."}
-{"timestamp":"2026-07-02T03:00:30.478Z","type":"fill","target":"input:Order ID","note":"1234"}
-{"timestamp":"2026-07-02T03:00:30.485Z","type":"fill","target":"textarea:Reason","note":"Customer requested a refund."}
-{"timestamp":"2026-07-02T03:00:30.555Z","type":"click","target":"button:Submit|Continue","note":"Clicked resilient submit button."}
-{"timestamp":"2026-07-02T03:00:30.558Z","type":"complete","target":"url","note":"http://127.0.0.1:3020/success"}
+{"timestamp":"2026-07-02T03:03:09.021Z","type":"connect","target":"cdp","note":"http://127.0.0.1:35419"}
+{"timestamp":"2026-07-02T03:03:09.101Z","type":"click","target":"tripwire-modal-close","note":"Closed injected modal overlay."}
+{"timestamp":"2026-07-02T03:03:09.112Z","type":"fill","target":"input:Order ID","note":"1234"}
+{"timestamp":"2026-07-02T03:03:09.119Z","type":"fill","target":"textarea:Reason","note":"Customer requested a refund."}
+{"timestamp":"2026-07-02T03:03:09.186Z","type":"click","target":"button:Submit|Continue","note":"Clicked resilient submit button."}
+{"timestamp":"2026-07-02T03:03:09.191Z","type":"complete","target":"url","note":"http://127.0.0.1:3020/success"}

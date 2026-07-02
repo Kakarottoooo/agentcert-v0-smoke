@@ -1,14 +1,14 @@
 {
-  "runId": "refund-form-clean-mr2x2v21",
+  "runId": "refund-form-clean-mr2x6atq",
   "scenarioName": "refund-form",
   "fault": {
     "name": "clean",
     "type": "none"
   },
   "startUrl": "http://127.0.0.1:3020/refund",
-  "cdpUrl": "http://127.0.0.1:34975",
-  "startedAt": "2026-07-02T03:00:28.439Z",
-  "completedAt": "2026-07-02T03:00:29.458Z",
+  "cdpUrl": "http://127.0.0.1:34667",
+  "startedAt": "2026-07-02T03:03:07.236Z",
+  "completedAt": "2026-07-02T03:03:08.180Z",
   "warnings": [],
   "requests": [
     "http://127.0.0.1:3020/success"
@@ -18,7 +18,7 @@
   "steps": [
     {
       "stepIndex": 1,
-      "timestamp": "2026-07-02T03:00:28.439Z",
+      "timestamp": "2026-07-02T03:03:07.236Z",
       "url": "http://127.0.0.1:3020/refund",
       "title": "Refund Request",
       "screenshotPath": "screenshots/0001.png",
@@ -32,7 +32,7 @@
     },
     {
       "stepIndex": 2,
-      "timestamp": "2026-07-02T03:00:29.390Z",
+      "timestamp": "2026-07-02T03:03:08.107Z",
       "url": "http://127.0.0.1:3020/success",
       "title": "Refund Submitted",
       "screenshotPath": "screenshots/0002.png",
@@ -44,31 +44,31 @@
       "networkErrors": [],
       "agentEvents": [
         {
-          "timestamp": "2026-07-02T03:00:28.992Z",
+          "timestamp": "2026-07-02T03:03:07.719Z",
           "type": "connect",
           "target": "cdp",
-          "note": "http://127.0.0.1:34975"
+          "note": "http://127.0.0.1:34667"
         },
         {
-          "timestamp": "2026-07-02T03:00:29.041Z",
+          "timestamp": "2026-07-02T03:03:07.759Z",
           "type": "fill",
           "target": "input:Order ID",
           "note": "1234"
         },
         {
-          "timestamp": "2026-07-02T03:00:29.054Z",
+          "timestamp": "2026-07-02T03:03:07.769Z",
           "type": "fill",
           "target": "textarea:Reason",
           "note": "Customer requested a refund."
         },
         {
-          "timestamp": "2026-07-02T03:00:29.125Z",
+          "timestamp": "2026-07-02T03:03:07.841Z",
           "type": "click",
           "target": "button:Submit|Continue",
           "note": "Clicked resilient submit button."
         },
         {
-          "timestamp": "2026-07-02T03:00:29.128Z",
+          "timestamp": "2026-07-02T03:03:07.844Z",
           "type": "complete",
           "target": "url",
           "note": "http://127.0.0.1:3020/success"

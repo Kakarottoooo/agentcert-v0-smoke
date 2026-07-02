@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1",
   "kind": "agentcert.monitor_snapshot",
-  "generatedAt": "2026-07-02T03:00:37.690Z",
+  "generatedAt": "2026-07-02T03:03:15.873Z",
   "subject": "agentcert-v0-smoke",
   "summary": {
     "totalRecords": 6,
@@ -178,7 +178,7 @@
   ],
   "recentRuns": [
     {
-      "id": "0bc8c8e54664615f",
+      "id": "5a254feac23da4e3",
       "product": "tripwire-ci",
       "phase": "pre-release",
       "subject": "agentcert-v0-smoke",
@@ -191,8 +191,8 @@
       ],
       "passed": false,
       "score": 0,
-      "timestamp": "2026-07-02T03:00:36.128Z",
-      "durationMs": 1434,
+      "timestamp": "2026-07-02T03:03:14.478Z",
+      "durationMs": 1270,
       "evidenceCount": 2,
       "primaryFailure": "Visible text should include Refund request submitted",
       "failurePatterns": [
@@ -227,7 +227,7 @@
       }
     },
     {
-      "id": "3b072efdd3bc2c35",
+      "id": "0054167070a8fdba",
       "product": "tripwire-ci",
       "phase": "pre-release",
       "subject": "agentcert-v0-smoke",
@@ -238,8 +238,8 @@
       "failureTypes": [],
       "passed": true,
       "score": 100,
-      "timestamp": "2026-07-02T03:00:33.729Z",
-      "durationMs": 2383,
+      "timestamp": "2026-07-02T03:03:12.234Z",
+      "durationMs": 2231,
       "evidenceCount": 0,
       "failurePatterns": [],
       "taxonomyReviewStatus": "none",
@@ -252,7 +252,7 @@
       }
     },
     {
-      "id": "b48e2f20ef58cb86",
+      "id": "717538bbf02b291a",
       "product": "tripwire-ci",
       "phase": "pre-release",
       "subject": "agentcert-v0-smoke",
@@ -263,8 +263,8 @@
       "failureTypes": [],
       "passed": true,
       "score": 100,
-      "timestamp": "2026-07-02T03:00:32.311Z",
-      "durationMs": 1403,
+      "timestamp": "2026-07-02T03:03:10.833Z",
+      "durationMs": 1384,
       "evidenceCount": 0,
       "failurePatterns": [],
       "taxonomyReviewStatus": "none",
@@ -277,7 +277,7 @@
       }
     },
     {
-      "id": "a9709475bf68f410",
+      "id": "ee40ea72f9090f32",
       "product": "tripwire-ci",
       "phase": "pre-release",
       "subject": "agentcert-v0-smoke",
@@ -288,8 +288,8 @@
       "failureTypes": [],
       "passed": true,
       "score": 100,
-      "timestamp": "2026-07-02T03:00:30.916Z",
-      "durationMs": 1380,
+      "timestamp": "2026-07-02T03:03:09.551Z",
+      "durationMs": 1265,
       "evidenceCount": 0,
       "failurePatterns": [],
       "taxonomyReviewStatus": "none",
@@ -302,7 +302,7 @@
       }
     },
     {
-      "id": "7926774183585b95",
+      "id": "43058538e82e7141",
       "product": "tripwire-ci",
       "phase": "pre-release",
       "subject": "agentcert-v0-smoke",
@@ -313,8 +313,8 @@
       "failureTypes": [],
       "passed": true,
       "score": 100,
-      "timestamp": "2026-07-02T03:00:29.481Z",
-      "durationMs": 1419,
+      "timestamp": "2026-07-02T03:03:08.228Z",
+      "durationMs": 1309,
       "evidenceCount": 0,
       "failurePatterns": [],
       "taxonomyReviewStatus": "none",
@@ -327,7 +327,7 @@
       }
     },
     {
-      "id": "d9249f2a8379fc3c",
+      "id": "a667afd7511506e4",
       "product": "tripwire-ci",
       "phase": "pre-release",
       "subject": "agentcert-v0-smoke",
@@ -338,8 +338,8 @@
       "failureTypes": [],
       "passed": true,
       "score": 100,
-      "timestamp": "2026-07-02T03:00:26.426Z",
-      "durationMs": 3038,
+      "timestamp": "2026-07-02T03:03:06.830Z",
+      "durationMs": 1367,
       "evidenceCount": 0,
       "failurePatterns": [],
       "taxonomyReviewStatus": "none",

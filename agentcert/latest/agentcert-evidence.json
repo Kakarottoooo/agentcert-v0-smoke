@@ -3,8 +3,8 @@
   "schemaVersion": "1",
   "schemaSemver": "1.0.0",
   "kind": "agentcert.evidence_bundle",
-  "runId": "agentcert_1782961237678",
-  "generatedAt": "2026-07-02T03:00:37.678Z",
+  "runId": "agentcert_1782961395861",
+  "generatedAt": "2026-07-02T03:03:15.861Z",
   "subject": {
     "name": "agentcert-v0-smoke",
     "type": "agent"
@@ -26,8 +26,8 @@
     {
       "schemaVersion": "1",
       "product": "tripwire-ci",
-      "runId": "tripwire_a5ea79a41fda",
-      "timestamp": "2026-07-02T03:00:37.576Z",
+      "runId": "tripwire_3edcbc507431",
+      "timestamp": "2026-07-02T03:03:15.763Z",
       "phase": "pre-release",
       "score": 83,
       "passed": true,
